@@ -5,6 +5,7 @@
         public MainPage()
         {
             InitializeComponent();
+            //lblResult.Text = "FIRST LOAD VALUE. HELLO WORLD";
         }
 
         private void OnCalculateClicked(object sender, EventArgs e)
