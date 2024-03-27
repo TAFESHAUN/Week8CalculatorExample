@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week8WalkTHR.MainPage">
+    <!--X and Y coord for layout-->
+    <Grid BackgroundColor="DarkSlateGrey">
+        <!--Stacking elements ON TOP of each other WITH orientation-->
+        <StackLayout Orientation="Vertical" MaximumWidthRequest="200">
+            <!--First Name-->
+            <Label TextColor="Coral" Text="Enter Your First Name"></Label>
+            <Entry Placeholder="First Name" x:Name="fnameEntry"/>
+            <!--Last Name-->
+            <Label Text="Enter Your Last Name"></Label>
+            <Entry Placeholder="Last Name" x:Name="lnameEntry"></Entry>
+            
+            <!--Test Password-->
+            <!--<Label>Enter Your Password</Label>
+            <Entry IsPassword="True" Placeholder="Enter Password" PlaceholderColor="HotPink"></Entry>-->
+
+            <!--Submit Form Data-->
+            <Button Text="Submit Data" Opacity="0.8" Clicked="Button_Clicked" />
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

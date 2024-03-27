@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week8CalculatorExample.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Calculator" FontSize="24" HorizontalOptions="Center" Margin="0,0,0,20"/>
+
+        <Entry x:Name="txtNumber1" Placeholder="Enter number 1" Keyboard="Numeric" Margin="0,0,0,10"/>
+        <Entry x:Name="txtNumber2" Placeholder="Enter number 2" Keyboard="Numeric" Margin="0,0,0,10"/>
+
+        <Picker x:Name="pickerOperation" Title="Select Operation" Margin="0,0,0,10">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Addition</x:String>
+                    <x:String>Subtraction</x:String>
+                    <x:String>Multiplication</x:String>
+                    <x:String>Division</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Button Text="Calculate" Clicked="OnCalculateClicked" HorizontalOptions="Center" Margin="0,0,0,20"/>
+
+        <Label x:Name="lblResult" HorizontalOptions="Center" FontSize="20"/>
+    </StackLayout>
+
+</ContentPage>
